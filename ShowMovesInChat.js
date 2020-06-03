@@ -123,7 +123,7 @@ on('ready', function() {
                     if ( regexp.test(lines[i]) ) { aura2 = "aura2_radius|0.5 aura2_color|800080 "; } 
                 }
                 // build the token mod command
-                var printOut = "!token-mod --set bar2_value|x"+attacks+frenzy+sweep+" "+aura1+aura2+reach+arcResist+ "bar3_value|W"+wounds.toString()+hardy+" "+large+armorPierce  ;
+                var printOut = "!token-mod --set bar2_value|x"+attacks+frenzy+sweep+" "+aura1+aura2+reach+fear+arcResist+ "bar3_value|W"+wounds.toString()+hardy+" "+large+armorPierce  ;
                 sendChat('','/w gm <b>Token Mod Command:</b><br>'+printOut+' defaulttoken<br>');
             });
        };
