@@ -56,7 +56,8 @@ on('ready', function() {
                 var frenzy = '';
                 var sweep = '';
                 var hardy = '';
-                var large = ''
+                var large = '';
+                var fear = '';
         
    
                 for (i = 1; i < lines.length; i++ ) {
@@ -79,6 +80,10 @@ on('ready', function() {
                     regexp = /v\w*\s+resilient/i; 
                     if ( regexp.test(lines[i]) ) {  wounds = wounds + 1; }
                     
+                    // fear
+                    regexp = /fear/i;
+                    if ( regexp.test(lines[i]) ) {  fear = 'statusmarkers|5b-Fear '; }
+
                     // reach check after edges
                     regexp = /reach\:?\s+(\d+)/i;
                     if ( regexp.test(lines[i]) ) {  
